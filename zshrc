@@ -10,6 +10,8 @@ ZSH_THEME="diz"
 export EDITOR="vim"
 bindkey -v 
 
+setopt AUTO_CD
+
 # vi style incremental search
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
