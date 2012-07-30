@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "setting up links to dofiles";
 ln -s ~/dotfiles/zshrc ~/.zshrc;
-ln -s ~/dotfiles/vim ~/.vimrc;
+ln -s ~/dotfiles/vim ~/.vim;
 echo " initing vim plugins";
 cd ~/dotfiles;
 git submodule update --init;
