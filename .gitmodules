@@ -106,3 +106,6 @@
 [submodule "vim/bundle/vim-tomorrow-theme"]
 	path = vim/bundle/vim-tomorrow-theme
 	url = https://github.com/chriskempson/vim-tomorrow-theme.git
+[submodule ".vim"]
+	path = .vim
+	url = git://github.com/jasonwmiller/vim-config.git
