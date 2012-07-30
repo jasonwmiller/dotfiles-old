@@ -1,0 +1,7 @@
+let g:Powerline_symbols = 'fancy'
+set encoding=utf-8
+set fillchars+=stl:\ ,stlnc:\
+
+# nerdtree magic from :https://github.com/scrooloose/nerdtree
+autocmd vimenter * if !argc() | NERDTree | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
