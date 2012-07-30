@@ -10,6 +10,6 @@ git submodule update --init;
 cd ~/dotfiles/.vim
 git submodule add git://github.com/jasonwmiller/tmux-config.git bundle/tmux-config
 git submodule update --init
-ln -s ~/.vim/bundle/tmux-config/tmux.conf ~/.tmux.conf
+#ln -s ~/.vim/bundle/tmux-config/tmux.conf ~/.tmux.conf
 echo "don't forget to install oh-my-zsh";
 echo "curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh";
