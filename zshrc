@@ -8,9 +8,12 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="diz"
 
 export EDITOR="vim"
-bindkey -v 
+bindkey -v
 
 setopt AUTO_CD
+
+export TZ=America/Chicago
+export LC_TIME="en_US"
 
 # vi style incremental search
 bindkey '^R' history-incremental-search-backward
@@ -43,6 +46,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(command-not-found dircycle encode64 git git-flow github npm pip redis-cli ruby rvm screen virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
+alias zr="source $ZSH/oh-my-zsh.sh"
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games

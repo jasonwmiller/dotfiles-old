@@ -8,6 +8,15 @@ set fillchars+=stl:\ ,stlnc:\
 autocmd vimenter * if !argc() | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
+set bg=dark
+let g:molokai_original = 1
+let g:Powerline_symbols = 'compatible'
+let g:Powerline_cache_enabled = 1
+let g:Powerline_cache_file = expand('$TMP/Powerline.cache')
+colorscheme molokai
+
+nnoremap <S-Tab> :buffers<CR>:buffer<Space>
+
 au FileType python setl sw=2 sts=2 et
 set list
 
