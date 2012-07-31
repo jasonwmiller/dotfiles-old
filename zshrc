@@ -25,26 +25,13 @@ bindkey '^N' history-search-forward
 alias zshconfig="vim ~/.zshrc"
 alias ohmyzsh="vim ~/.oh-my-zsh"
 
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-COMPLETION_WAITING_DOTS="true"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(command-not-found dircycle encode64 git git-flow github npm pip redis-cli ruby rvm screen virtualenvwrapper)
+plugins=(dircycle encode64 git git-flow github npm pip redis-cli ruby rvm screen virtualenvwrapper)
 
+# make a .secrets file to hold private info (like github or ec2 creds)
+source ~/Dropbox/.secrets
 source $ZSH/oh-my-zsh.sh
 alias zr="source $ZSH/oh-my-zsh.sh"
 
