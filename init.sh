@@ -5,6 +5,12 @@ echo "to install oh-my-zsh:";
 echo "curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh";
 read -p "Continue with this setup? (y/n)?" CONT
 if [ "$CONT" == "y" ]; then
+    echo "backing up existing dotfiles";
+    mv ~/.zshrc ~/.zshrc.orig;
+    mv ~/.vim ~/.vim.orig;
+    mv ~/.vimrc ~/.vimrc.orig;
+    mv ~/.vimrc.local ~/.vimrc.local.orig
+    mv ~/.tmux.conf .tmux.conf.orig
     echo "setting up links to dofiles";
     ln -s ~/dotfiles/zshrc ~/.zshrc;
     ln -s ~/dotfiles/.vim ~/.vim;
@@ -19,6 +25,6 @@ if [ "$CONT" == "y" ]; then
     git submodule add git://github.com/jasonwmiller/tmux-config.git bundle/tmux-config
     git submodule update --init
 else
-      echo "that was close...";
+      echo "game over man";
 fi
 
