@@ -31,7 +31,8 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 plugins=(dircycle encode64 git git-flow github npm pip redis-cli ruby rvm screen virtualenvwrapper)
 
 # make a .secrets file to hold private info (like github or ec2 creds)
-source ~/Dropbox/.secrets
+[[-e ~/Dropbox.secrets ]] source ~/Dropbox/.secrets
+
 source $ZSH/oh-my-zsh.sh
 alias zr="source $ZSH/oh-my-zsh.sh"
 
