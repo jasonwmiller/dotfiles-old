@@ -33,7 +33,7 @@ ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[magenta]%} ⓤnmerged "
 
 local return_status="%{$fg[red]%}%(?..⨂ )%{$reset_color%}"
 
-RPROMPT='%{${fg_bold[blue]}%}$(virtualenv_info)$(git_prompt_info)%{$reset_color%} ${date} ${time}'
+RPROMPT='%{${fg_bold[blue]}%}$(git_prompt_info)%{$reset_color%} ${date} ${time}'
 
 PROMPT='%{$fg[magenta]%}%n%{$reset_color%}@%{$fg[yellow]%}$(box_name)%{$reset_color%}:%{$fg_bold[green]%}$(collapse_pwd)%{$reset_color%}${return_status}%{$reset_color%}
 %(?,,%{${fg_bold[blue]}%}[%?]%{$reset_color%})➼ '
