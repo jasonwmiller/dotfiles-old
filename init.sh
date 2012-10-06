@@ -24,6 +24,9 @@ if [ "$CONT" == "y" ]; then
     cd ~/dotfiles/.vim
     git submodule add git://github.com/jasonwmiller/tmux-config.git bundle/tmux-config
     git submodule update --init
+    mkdir ~/bin
+    cp ~/dotfiles/rmate ~/bin
+    chmod +x ~/bin/rmate
 else
       echo "game over man";
 fi
