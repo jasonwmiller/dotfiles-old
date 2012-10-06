@@ -28,7 +28,7 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(dircycle encode64 git git-flow github npm pip redis-cli ruby rvm screen virtualenvwrapper)
+plugins=(dircycle encode64 git git-flow github npm pip redis-cli ruby rvm screen)
 
 # make a .secrets file to hold private info (like github or ec2 creds)
 #[[-e ~/Dropbox.secrets ]] source ~/Dropbox/.secrets
