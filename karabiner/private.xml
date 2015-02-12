@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<root>
+    <list>
+        <item>
+            <name>Space Cadet Mode</name>
+            <appendix>This mode emulates a few of the features of the Space Cadet keyboard.</appendix>
+            <appendix>It also adds a few other helpful mappings.</appendix>
+            <item>
+              <name>Capslock to command shift</name>
+              <appendix>OS X doesn't have a Hyper. This is to remap caps lock to Control + Shift + Option + Command.</append>
+              <identifier>space_cadet.capslock_to_commandshift</identifier>
+              <autogen>--KeyToKey-- KeyCode::F19, KeyCode::COMMAND_L, ModifierFlag::OPTION_L | ModifierFlag::SHIFT_L | ModifierFlag::CONTROL_L
+              </autogen>
+            </item>
+            <item>
+                <name>Remap Held Tab to Command + Shift</name>
+                <appendix>This maps Held Tab to Command + Shift.</appendix>
+                <appendix>You can use this key in your own custom keyboard shortcuts you create in apps.</appendix>
+
+                <identifier>space_cadet.held_tab_to_hyper</identifier>
+
+                <autogen>
+                    --KeyOverlaidModifier--
+                    KeyCode::TAB,
+                    ModifierFlag::NONE,
+
+                    KeyCode::COMMAND_L,
+                    ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L,
+
+                    KeyCode::TAB
+                </autogen>
+            </item>
+          </item>
+    </list>
+</root>
