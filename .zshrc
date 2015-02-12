@@ -8,7 +8,7 @@ ZSH_THEME="diz"
 alias zshconfig="atom ~/.zshrc && zshreload"
 alias zshreload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias ohmyzsh="atom ~/.oh-my-zsh"
-
+alias vim="atom"
 
 # Options:
 export UPDATE_ZSH_DAYS=5

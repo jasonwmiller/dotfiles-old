@@ -1136,7 +1136,7 @@
 	<key>MaxVertically</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/dotfiles/iterm2</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -1154,18 +1154,20 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>302</string>
+		<string>319</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>1222 388 694 637 0 0 1920 1177 </string>
+	<string>2115 159 811 491 0 0 3200 1777 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>762 299 924 485 0 0 1920 1177 </string>
+	<string>193 79 924 485 0 0 2560 1417 </string>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>2095 549 384 129 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1282 0 1275 708 0 0 2560 1417 </string>
+	<string>894 439 890 528 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2685,7 +2687,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2015-02-12T06:43:15Z</date>
+	<date>2015-02-11T21:14:44Z</date>
 	<key>SavePasteHistory</key>
 	<true/>
 	<key>ShowBookmarkName</key>
