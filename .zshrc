@@ -5,7 +5,8 @@ ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="diz"
 
 # Aliases:
-alias zshconfig="atom ~/.zshrc"
+alias zshconfig="atom ~/.zshrc && zshreload"
+alias zshreload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zshrc'"
 alias ohmyzsh="atom ~/.oh-my-zsh"
 
 
@@ -31,9 +32,9 @@ BASE16_SHELL="$HOME/.config/base16-shell/base16-$BASE16_SCHEME.dark.sh"
 DEFAULT_USER="jwm"
 
 # Includes:
-source $ZSH/oh-my-zsh.sh
-source /opt/boxen/env.sh
-source /usr/local/bin/virtualenvwrapper.sh
+[[ -f $ZSH/oh-my-zsh.sh ]] && source $ZSH/oh-my-zsh.sh
+[[ -f /opt/boxen/env.sh ]] && source /opt/boxen/env.sh
+[[ -f /usr/local/bin/virtualenvwrapper.sh ]] && source /usr/local/bin/virtualenvwrapper.sh
 
 # Exports:
 export EDITOR="atom -nw"
