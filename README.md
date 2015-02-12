@@ -11,4 +11,4 @@ cd dotfiles
 bash init.sh
 ```
 
-then restart your shell and try out your nifty new setup.
+then restart your shell and try out your nifty new setup!
