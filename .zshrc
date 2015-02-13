@@ -48,4 +48,4 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 ### google-cloud cli
 export PATH=$PATH:/Users/jwm/google-cloud-sdk/bin
 ### Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="/usr/local/heroku/bin:$PATH"z

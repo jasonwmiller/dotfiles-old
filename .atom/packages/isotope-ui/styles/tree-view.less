@@ -1,0 +1,125 @@
+.tree-view.list-tree {
+
+  .li-mixin (@fg-subtle);
+
+  padding: (@component-line-height/2 - @modular-scale-xxs * 1rem) 0 0 0;
+
+  //necesary to make the selected item background color work for tree-view only
+  li {
+    &.selected,
+    &:not(.list-nested-item).selected,
+    &.list-nested-item.selected > .list-item {
+      color: @base-fg;
+      &:before {
+        border-top-left-radius: @component-border-radius;
+        border-bottom-left-radius: @component-border-radius;
+      }
+    }
+
+    //add these variations in here as well for specicifty
+    .li-variation-mixin ( status-modified, @fg-modified, lighten(@fg-modified, 12%) );
+    .li-variation-mixin ( status-added,    @fg-added,    lighten(@fg-added, 12%) );
+  }
+
+  li,
+  li:not(.list-nested-item),
+  li.list-nested-item > .list-item {
+    min-height: @component-line-height / @modular-scale;
+    line-height: @component-line-height / @modular-scale;
+  }
+
+  li.selected:before,
+  li:not(.list-nested-item).selected:before,
+  li.list-nested-item.selected > .list-item:before {
+    height: @component-line-height / @modular-scale;
+    min-height: @component-line-height / @modular-scale;
+    line-height: @component-line-height / @modular-scale;
+  }
+
+  // hide pointer icons in treeview
+  &.has-collapsable-children {
+    .list-nested-item > .list-item:before {
+      display: none;
+    }
+    .list-nested-item > .list-tree > li,
+    .list-nested-item > .list-group > li {
+      margin-left: 0;
+    }
+  }
+
+  // correct git icon size
+  .icon-file-directory[data-name=".git"] {
+    &:before {
+      top: 2px;
+      font-size: medium;
+    }
+  }
+
+  &:focus {
+    li {
+      &.selected,
+      &:not(.list-nested-item).selected,
+      &.list-nested-item.selected > .list-item {
+        &:before {
+          background: @level-5-bg;
+        }
+      }
+    }
+  }
+}
+
+.right {
+  .tree-view.list-tree {
+    li {
+      &.selected,
+      &:not(.list-nested-item).selected,
+      &.list-nested-item.selected > .list-item {
+        &:before {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-top-right-radius: @component-border-radius;
+          border-bottom-right-radius: @component-border-radius;
+        }
+      }
+    }
+  }
+}
+.tree-view-resizer {
+  padding-left: @modular-scale-xxs * 1rem;
+  .tree-view-resize-handle {
+    width: 8px;
+  }
+}
+.right {
+  .tree-view-resizer {
+    padding-left: 0;
+    padding-right: @modular-scale-xxs * 1rem;
+  }
+}
+
+
+// optional color tree-view selected item just like tabs
+[isotope-ui-treecolor='true'] {
+  .tree-view.list-tree {
+    li {
+      &.selected,
+      &:not(.list-nested-item).selected,
+      &.list-nested-item.selected > .list-item {
+        &:before {
+          background: @ui-theme-color;
+        }
+      }
+    }
+    &:focus {
+      li {
+        &.selected,
+        &:not(.list-nested-item).selected,
+        &.list-nested-item.selected > .list-item {
+          &:before {
+            opacity: .88;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+"*":
+  editor:
+    invisibles: {}
+    showInvisibles: true
+    showIndentGuide: true
+    fontFamily: "Inputmono-light"
+  core:
+    themes: [
+      "seti-ui"
+      "monokai"
+    ]
+    disabledPackages: [
+      "minimap"
+      "remote-edit"
+    ]
+  "exception-reporting":
+    userId: "661b6c20-51d7-1221-e6b2-d178110774a3"
+  welcome:
+    showOnStartup: false
+  autosave:
+    enabled: true
+  "atom-color-highlight": {}
+  linter: {}
+  minimap:
+    scrollAnimation: true

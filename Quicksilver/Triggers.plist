@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>triggers</key>
+	<array>
+		<dict>
+			<key>ID</key>
+			<string>QSGetGlobalSelectionTrigger</string>
+			<key>command</key>
+			<string>QSGetGlobalSelectionCommand</string>
+			<key>defaults</key>
+			<dict>
+				<key>enabled</key>
+				<true/>
+				<key>keyCode</key>
+				<integer>53</integer>
+				<key>modifiers</key>
+				<integer>1048840</integer>
+				<key>type</key>
+				<string>QSHotKeyTrigger</string>
+			</dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyCode</key>
+			<integer>53</integer>
+			<key>modifiers</key>
+			<integer>1048840</integer>
+			<key>set</key>
+			<string>Quicksilver</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+		<dict>
+			<key>ID</key>
+			<string>QSActivateTextModeTrigger</string>
+			<key>command</key>
+			<string>QSActivateTextModeCommand</string>
+			<key>set</key>
+			<string>Quicksilver</string>
+			<key>type</key>
+			<string>QSHotKeyTrigger</string>
+		</dict>
+	</array>
+</dict>
+</plist>

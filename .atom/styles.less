@@ -1,0 +1,57 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+ body {
+   -webkit-font-smoothing: antialiased;
+   text-rendering: optimizeLegibility;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+.tree-view-resizer, .editor {
+  ::-webkit-scrollbar {
+    width: 0.5em;
+    height: 0.5em;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #303030;
+  }
+  ::-webkit-scrollbar-thumb {
+   background-color: lighten(#303030, 15%);
+  }
+}
+
+.tree-view {
+ font-size: 16px;
+ font-family: InputMono-light;
+}
+
+.tree-view .entry.directory.status-modified > .header,
+.tree-view .entry.file.status-modified {
+  font-weight: bold;
+}
+
+.pane {
+background: url('/Users/jwm/dotfiles/dotimages/damask.jpg') no-repeat center center fixed;;
+background-size: cover;
+}
+
+.editor {
+background: rgba(0, 0, 0, .5);
+}
+
+.editor .git-commit.line-too-long.deprecated {
+  color: orange;
+  text-decoration: none;
+}
+
+.editor .git-commit.line-too-long.illegal {
+  color: #fff;
+  background: #DA2C43;
+  opacity: 0.9;
+}

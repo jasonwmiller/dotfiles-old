@@ -1,0 +1,46 @@
+/*
+* tweaks to non-core packages
+*/
+
+.workspace .browser-toolbar, //deprecated selector
+atom-workspace .browser-toolbar { //correct selector
+  background: transparent;
+  .top-edge ();
+  .omnibox-container .omnibox input {
+    border-radius: @component-border-radius;
+    background: @level-3-bg;
+  }
+}
+
+atom-text-editor,
+atom-text-editor::shadow {
+
+  atom-color-highlight {
+    dot-color-marker {
+      margin-top: .4em;
+      max-width: .6em;
+      max-height: .6em;
+      border-radius: @component-border-radius;
+
+      &.selected {
+        box-shadow: 0 0 1px 1px @base-fg;
+
+        .selector {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .autocomplete {
+    &.select-list ol li {
+      padding: 0;
+    }
+  }
+
+  // minimap
+  atom-text-editor-minimap::shadow .minimap-visible-area {
+    background-color: @level-0-bg;
+    opacity: .24;
+  }
+}

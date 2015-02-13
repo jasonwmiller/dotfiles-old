@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>13E28</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Displays Plugin</string>
+	<key>CFBundleExecutable</key>
+	<string>Displays Plugin</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.blacktree.Quicksilver.QSDisplaysPlugIn</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Displays Plugin</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.2</string>
+	<key>CFBundleVersion</key>
+	<string>8B</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>5A2034a</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>13A595</string>
+	<key>DTSDKName</key>
+	<string>macosx10.9</string>
+	<key>DTXcode</key>
+	<string>0501</string>
+	<key>DTXcodeBuild</key>
+	<string>5A2034a</string>
+	<key>QSActions</key>
+	<dict>
+		<key>DesktopPictureAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSDisplaysActionProvider</string>
+			<key>actionSelector</key>
+			<string>setDesktop:onScreen:</string>
+			<key>directTypes</key>
+			<array>
+				<string>Apple URL pasteboard type</string>
+				<string>NSFilenamesPboardType</string>
+			</array>
+			<key>icon</key>
+			<string>SetDesktop</string>
+			<key>indirectOptional</key>
+			<true/>
+			<key>name</key>
+			<string>Set Desktop Picture</string>
+			<key>validatesObjects</key>
+			<string>YES</string>
+		</dict>
+		<key>QSDisplayParametersApplyAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSDisplaysActionProvider</string>
+			<key>actionSelector</key>
+			<string>applyParameters:toDisplay:</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSDisplayParametersType</string>
+			</array>
+			<key>icon</key>
+			<string>Display</string>
+			<key>name</key>
+			<string>Find With...</string>
+			<key>reverseArguments</key>
+			<false/>
+		</dict>
+		<key>QSDisplaySetDepthAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSDisplaysActionProvider</string>
+			<key>actionSelector</key>
+			<string>applyParameters:toDisplay:</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSDisplayIDType</string>
+			</array>
+			<key>icon</key>
+			<string>DisplayDepth</string>
+			<key>name</key>
+			<string>Set Color Depth...</string>
+			<key>rankModification</key>
+			<integer>3</integer>
+			<key>reverseArguments</key>
+			<true/>
+		</dict>
+		<key>QSDisplaySetRefreshRateAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSDisplaysActionProvider</string>
+			<key>actionSelector</key>
+			<string>applyParameters:toDisplay:</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSDisplayIDType</string>
+			</array>
+			<key>icon</key>
+			<string>DisplayResolution</string>
+			<key>name</key>
+			<string>Set Refresh Rate...</string>
+			<key>rankModification</key>
+			<integer>3</integer>
+			<key>reverseArguments</key>
+			<true/>
+		</dict>
+		<key>QSDisplaySetResolutionAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSDisplaysActionProvider</string>
+			<key>actionSelector</key>
+			<string>applyParameters:toDisplay:</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSDisplayIDType</string>
+			</array>
+			<key>icon</key>
+			<string>DisplayResolution</string>
+			<key>name</key>
+			<string>Set Resolution...</string>
+			<key>rankModification</key>
+			<integer>3</integer>
+			<key>reverseArguments</key>
+			<true/>
+		</dict>
+	</dict>
+	<key>QSPlugIn</key>
+	<dict>
+		<key>author</key>
+		<string>Patrick Robertson, Blacktree, Inc.</string>
+		<key>categories</key>
+		<array>
+			<string>System</string>
+		</array>
+		<key>description</key>
+		<string>Allows modification of desktop picture, resolution and depth of displays</string>
+		<key>extendedDescription</key>
+		<string>&lt;h3&gt;Displays Plugin&lt;/h3&gt;
+
+&lt;p&gt;The displays plugin allows Quicksilver to index the displays currently attached to your Mac, in order to set the Desktop picture and their resolution, colour depth and refresh rate.&lt;/p&gt;
+
+&lt;h3&gt;Catalog&lt;/h3&gt;
+
+&lt;p&gt;A single 'Displays' catalog item is added to the 'Plugins' section in the Catalog preferences which indexes all the displays that are currently attached to your Mac.&lt;/p&gt;
+
+&lt;h3&gt;Actions&lt;/h3&gt;
+
+&lt;h4&gt;Set Desktop Picture&lt;/h4&gt;
+
+&lt;p&gt;This action takes a file or a URL pointing to an image file (types include .jpg, .gif, .pdf etc.) in order to set the currently focused display.&lt;br /&gt;
+In order to set the Desktop picture for a different display, tab (⇥) to the 3rd pane in Quicksilver, and select an alternate display. In order for the list of displays to correctly populate in Quicksilver's 3rd pane, you &lt;strong&gt;must&lt;/strong&gt; enable the 'Displays' catalog item. see above.&lt;/p&gt;
+
+&lt;h4&gt;Set Colour Depth&lt;/h4&gt;
+
+&lt;p&gt;This action allows you to alter the colour depth of a given screen, selected in Quicksilver's 1st pane. By tabbing to the 3rd pane (⇥) you can see the available options.&lt;/p&gt;
+
+&lt;h4&gt;Set Refresh Rate&lt;/h4&gt;
+
+&lt;p&gt;Similar to the 'Set Colour Depth' action, this allows you to alter the refresh rate of a given screen.&lt;/p&gt;
+
+&lt;h4&gt;Set Resolution&lt;/h4&gt;
+
+&lt;p&gt;Similar to the 'Set Colour Depth' and 'Set Refresh Rate' actions.&lt;/p&gt;
+</string>
+		<key>icon</key>
+		<string>Display</string>
+	</dict>
+	<key>QSPresetAdditions</key>
+	<array>
+		<dict>
+			<key>ID</key>
+			<string>QSPresetDisplays</string>
+			<key>catalogPath</key>
+			<string>QSPresetSystemGroup/QSPresetDevices</string>
+			<key>name</key>
+			<string>Displays</string>
+			<key>source</key>
+			<string>QSDisplaysObjectSource</string>
+		</dict>
+	</array>
+	<key>QSRegistration</key>
+	<dict>
+		<key>QSActionProviders</key>
+		<dict>
+			<key>QSDisplaysActionProvider</key>
+			<string>QSDisplaysActionProvider</string>
+		</dict>
+		<key>QSBundleChildHandlers</key>
+		<dict>
+			<key>com.apple.preference.displays</key>
+			<string>QSDisplaysObjectSource</string>
+		</dict>
+		<key>QSObjectHandlers</key>
+		<dict>
+			<key>QSDisplayIDType</key>
+			<string>QSDisplaysObjectSource</string>
+			<key>QSDisplayParametersType</key>
+			<string>QSDisplaysObjectSource</string>
+		</dict>
+		<key>QSObjectSources</key>
+		<dict>
+			<key>QSDisplaysObjectSource</key>
+			<string>QSDisplaysObjectSource</string>
+		</dict>
+	</dict>
+	<key>QSRequirements</key>
+	<dict>
+		<key>obsoletes</key>
+		<array>
+			<string>com.blacktree.Quicksilver.TKDesktopPlugin</string>
+		</array>
+		<key>version</key>
+		<string>3926</string>
+	</dict>
+	<key>QSResourceAdditions</key>
+	<dict>
+		<key>Display</key>
+		<string>[com.blacktree.Quicksilver.QSDisplaysPlugIn]:Display.png</string>
+	</dict>
+</dict>
+</plist>

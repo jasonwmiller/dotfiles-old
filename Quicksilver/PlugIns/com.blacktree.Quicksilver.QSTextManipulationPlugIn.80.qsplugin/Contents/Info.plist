@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12C3012</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleDisplayName</key>
+	<string>Text Manipulation Plugin</string>
+	<key>CFBundleExecutable</key>
+	<string>Text Manipulation</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.blacktree.Quicksilver.QSTextManipulationPlugIn</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Text Manipulation Plugin</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.1.1</string>
+	<key>CFBundleVersion</key>
+	<string>80</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4G2008a</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12C37</string>
+	<key>DTSDKName</key>
+	<string>macosx10.8</string>
+	<key>DTXcode</key>
+	<string>0452</string>
+	<key>DTXcodeBuild</key>
+	<string>4G2008a</string>
+	<key>QSActions</key>
+	<dict>
+		<key>QSLineRefDeleteAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSTextManipulationPlugIn</string>
+			<key>actionSelector</key>
+			<string>deleteLineReference:</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSLineReferenceType</string>
+			</array>
+			<key>enabled</key>
+			<false/>
+			<key>name</key>
+			<string>Delete Line</string>
+			<key>validatesObjects</key>
+			<string>YES</string>
+		</dict>
+		<key>QSLineRefEditAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSTextManipulationPlugIn</string>
+			<key>actionSelector</key>
+			<string>changeLineReference:to:</string>
+			<key>directTypes</key>
+			<array>
+				<string>QSLineReferenceType</string>
+			</array>
+			<key>enabled</key>
+			<false/>
+			<key>name</key>
+			<string>Change To...</string>
+			<key>validatesObjects</key>
+			<string>YES</string>
+		</dict>
+		<key>QSTextAppendAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSTextManipulationPlugIn</string>
+			<key>actionSelector</key>
+			<string>appendObject:toObject:</string>
+			<key>directTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+				<string>NSFilenamesPboardType</string>
+			</array>
+			<key>indirectTypes</key>
+			<array>
+				<string>public.text</string>
+			</array>
+			<key>name</key>
+			<string>Append To...</string>
+			<key>precedence</key>
+			<string>0.01</string>
+		</dict>
+		<key>QSTextAppendReverseAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSTextManipulationPlugIn</string>
+			<key>actionSelector</key>
+			<string>appendObject:toObject:</string>
+			<key>directFileTypes</key>
+			<array>
+				<string>txt</string>
+				<string>csv</string>
+				<string>rtf</string>
+				<string>rtfd</string>
+				<string>doc</string>
+				<string>'TEXT'</string>
+				<string>md</string>
+				<string>markdown</string>
+				<string>mdown</string>
+				<string>mkdn</string>
+				<string>public.text</string>
+			</array>
+			<key>directTypes</key>
+			<array>
+				<string>NSFilenamesPboardType</string>
+				<string>QSLineReferenceType</string>
+			</array>
+			<key>name</key>
+			<string>Append Text...</string>
+			<key>precedence</key>
+			<string>0.02</string>
+			<key>reverseArguments</key>
+			<true/>
+			<key>validatesObjects</key>
+			<string>YES</string>
+		</dict>
+		<key>QSTextPrependAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSTextManipulationPlugIn</string>
+			<key>actionSelector</key>
+			<string>prependObject:toObject:</string>
+			<key>directTypes</key>
+			<array>
+				<string>NSStringPboardType</string>
+				<string>NSFilenamesPboardType</string>
+			</array>
+			<key>enabled</key>
+			<false/>
+			<key>indirectTypes</key>
+			<array>
+				<string>public.text</string>
+			</array>
+			<key>name</key>
+			<string>Prepend To...</string>
+			<key>precedence</key>
+			<string>0.01</string>
+		</dict>
+		<key>QSTextPrependReverseAction</key>
+		<dict>
+			<key>actionClass</key>
+			<string>QSTextManipulationPlugIn</string>
+			<key>actionSelector</key>
+			<string>prependObject:toObject:</string>
+			<key>directFileTypes</key>
+			<array>
+				<string>txt</string>
+				<string>rtf</string>
+				<string>doc</string>
+				<string>rtfd</string>
+				<string>'TEXT'</string>
+				<string>md</string>
+				<string>markdown</string>
+				<string>mdown</string>
+				<string>mkdn</string>
+			</array>
+			<key>directTypes</key>
+			<array>
+				<string>NSFilenamesPboardType</string>
+				<string>QSLineReferenceType</string>
+			</array>
+			<key>enabled</key>
+			<false/>
+			<key>name</key>
+			<string>Prepend Text...</string>
+			<key>precedence</key>
+			<string>0.02</string>
+			<key>reverseArguments</key>
+			<true/>
+			<key>validatesObjects</key>
+			<string>YES</string>
+		</dict>
+	</dict>
+	<key>QSPlugIn</key>
+	<dict>
+		<key>author</key>
+		<string>Blacktree, Inc. &amp; Patrick Robertson</string>
+		<key>categories</key>
+		<array>
+			<string>Text</string>
+		</array>
+		<key>description</key>
+		<string>Actions for manipulating text lines in files</string>
+		<key>extendedDescription</key>
+		<string>&lt;h3&gt;Overview&lt;/h3&gt;
+&lt;p&gt;This plugin gives Quicksilver the ability to edit text files by appending text lines to the end of a file, prepending text or changing or deleting lines within a file. The plugin allows manipulation of .txt, .rtf, .rtfd, .doc and .TEXT files.&lt;br /&gt;
+Note that Quicksilver has the ability to enter into text files (using → or /) and list the contents of the file, which can be used in conjunction with this plugin for increased flexibility.&lt;/p&gt;
+
+&lt;h3&gt;Actions&lt;/h3&gt;
+
+&lt;h4&gt;Append Text... and Append To...&lt;/h4&gt;
+&lt;p&gt;Append some text to the selected text file. You can append text to a text file, or to a line within a text file (if you have entered a text file with → or /). This action is reversible. You can:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;[Some File] ⇥ Append Text... ⇥ [Some Text]&lt;/li&gt;
+&lt;li&gt;[Some Text] ⇥ Append To... ⇥ [Some File]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You should note that both these actions can use Quicksilver's 'smart' ability to place any item, object or file inside a text file. If you append an image to a text file, the path of the image is added, or similarly for web addresses (URLs). When entering a text file (→ or /), these lines are automatically resolved by Quicksilver into the original file, URL etc.&lt;br /&gt;
+This gives you a convenient way to store any file or piece of information within a text file, using nothing but Quicksilver.&lt;/p&gt;
+
+&lt;h4&gt;Prepend Text... and Prepend To...&lt;/h4&gt;
+&lt;p&gt;This action works in a similar manner to the 'Append' actions, but puts a line of text at the start of the file. The action is also reversible.&lt;/p&gt;
+
+&lt;h4&gt;Change To...&lt;/h4&gt;
+&lt;p&gt;The Change to... action is available for lines within a text file. To view lines, press → or / to enter into a text file. It allows for the modification of a specific line within a file.&lt;/p&gt;
+
+&lt;h4&gt;Delete Line&lt;/h4&gt;
+&lt;p&gt;As with the Change To... action, the Delete Line action is available for lines within a text file. It can be used to remove certain lines from within a given file.&lt;/p&gt;</string>
+		<key>icon</key>
+		<string>ClippingText</string>
+		<key>relatedBundles </key>
+		<array>
+			<string>com.apple.TextEdit</string>
+			<string>com.macromates.textmate</string>
+			<string>com.barebones.bbedit</string>
+		</array>
+	</dict>
+	<key>QSRegistration</key>
+	<dict>
+		<key>QSActionProviders</key>
+		<dict>
+			<key>QSTextManipulationPlugIn</key>
+			<string>QSTextManipulationPlugIn</string>
+		</dict>
+		<key>QSTypeDefinitions</key>
+		<dict>
+			<key>QSLineReferenceType</key>
+			<dict>
+				<key>icon</key>
+				<string>GenericDocumentIcon</string>
+				<key>name</key>
+				<string>Text Lines</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>QSRequirements</key>
+	<dict>
+		<key>version</key>
+		<string>3940</string>
+	</dict>
+</dict>
+</plist>

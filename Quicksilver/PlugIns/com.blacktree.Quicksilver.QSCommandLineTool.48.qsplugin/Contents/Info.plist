@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12C3012</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>Command Line Tool</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.blacktree.Quicksilver.QSCommandLineTool</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>Command Line Tool</string>
+	<key>CFBundlePackageType</key>
+	<string>BNDL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0.0</string>
+	<key>CFBundleVersion</key>
+	<string>48</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>4H127</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>12C37</string>
+	<key>DTSDKName</key>
+	<string>macosx10.8</string>
+	<key>DTXcode</key>
+	<string>0460</string>
+	<key>DTXcodeBuild</key>
+	<string>4H127</string>
+	<key>NSPrincipalClass</key>
+	<string>QSCommandLineTool</string>
+	<key>QSLoadImmediately</key>
+	<true/>
+	<key>QSPlugIn</key>
+	<dict>
+		<key>author</key>
+		<string>Blacktree, Inc.</string>
+		<key>categories</key>
+		<array>
+			<string>Development</string>
+			<string>Quicksilver</string>
+		</array>
+		<key>description</key>
+		<string>Allows data to be piped into Quicksilver from the command line</string>
+		<key>extendedDescription</key>
+		<string>&lt;p&gt;The &lt;code&gt;qs&lt;/code&gt; command allows you to select files or text in Quicksilver (or send them to the Shelf) from the command line.&lt;/p&gt;
+&lt;p&gt;Select a file:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;qs MyFile.jpg
+qs ~/Documents
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Select multiple files:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;qs file1.txt file2.txt
+qs *.pdf
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Select text:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;echo example | qs
+echo "example with multiple words" | qs
+whoami | qs
+pbpaste | qs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note that when you pipe text to &lt;code&gt;qs&lt;/code&gt;, the same smarts apply that you would get when typing text by hand. URLs, file paths, etc. are automatically recognized and the appropriate action will be displayed in Quicksilver's interface.&lt;/p&gt;
+&lt;p&gt;To send an item to the Shelf instead of selecting it, use the &lt;code&gt;-s&lt;/code&gt; option.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;qs -s ~/Documents/MyMainProject
+&lt;/code&gt;&lt;/pre&gt;</string>
+		<key>icon</key>
+		<string>ExecutableBinaryIcon</string>
+		<key>requiresFeature</key>
+		<string>0</string>
+	</dict>
+	<key>QSRegistration</key>
+	<dict>
+		<key>QSPreferencePanes</key>
+		<dict>
+			<key>QSCommandLineToolPrefPane</key>
+			<dict>
+				<key>class</key>
+				<string>QSCommandLineToolPrefPane</string>
+				<key>description</key>
+				<string>Installation and Configuration</string>
+				<key>icon</key>
+				<string>ExecutableBinaryIcon</string>
+				<key>name</key>
+				<string>Command Line Tool</string>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>
